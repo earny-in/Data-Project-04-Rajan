@@ -105,6 +105,155 @@ Some commonly used algorithms are:
 - Apriori Algorithm
 - Principal Component Analysis (PCA)
 
+
+---
+
+
+## 2. Hierarchical Clustering
+
+### What is Hierarchical Clustering?
+
+Hierarchical Clustering is an Unsupervised Machine Learning algorithm that groups similar data points into a hierarchy of clusters. It creates a tree-like structure called a **Dendrogram**.
+
+In simple words, it starts by treating each data point as a separate group and then gradually merges similar groups together.
+
+---
+
+### How Does It Work?
+
+1. Each data point starts as its own cluster.
+2. The algorithm finds the two most similar clusters.
+3. These clusters are merged into one.
+4. The process continues until all data points are grouped into a single cluster.
+
+---
+
+### Example
+
+Suppose we have four students.
+
+- Raj
+- Aman
+- Rahul
+- Priya
+
+The algorithm first compares their similarities.
+
+```
+Raj      Aman      Rahul      Priya
+
+ ↓          ↓
+
+Raj + Aman
+
+ ↓
+
+(Raj + Aman) + Rahul
+
+ ↓
+
+((Raj + Aman) + Rahul) + Priya
+```
+
+---
+
+### Applications
+
+- Customer Segmentation
+- Gene Analysis
+- Document Clustering
+- Image Segmentation
+
+---
+
+### Advantages
+
+- No need to choose the number of clusters initially
+- Easy to visualize using a Dendrogram
+- Useful for small datasets
+
+---
+
+### Limitations
+
+- Slow for large datasets
+- Requires more memory
+- Sensitive to noisy data
+
+---
+
+### Key Points
+
+- Unsupervised Learning algorithm
+- Creates hierarchical clusters
+- Uses a tree-like structure (Dendrogram)
+- Best for small datasets
+
+
+---
+
+
+## 3. Principal Component Analysis (PCA)
+
+### What is Principal Component Analysis (PCA)?
+
+Principal Component Analysis (PCA) is an Unsupervised Machine Learning algorithm used for **Dimensionality Reduction**. It reduces the number of features while keeping most of the important information.
+
+In simple words, PCA removes unnecessary features and keeps only the most useful ones.
+
+---
+
+### How Does It Work?
+
+1. The algorithm analyzes all features.
+2. It finds the most important information.
+3. Less important features are removed.
+4. A smaller dataset is created while preserving most of the original information.
+
+---
+
+### Example
+
+Suppose a student dataset contains:
+
+- Name
+- Roll Number
+- Age
+- Height
+- Weight
+- Marks
+- Attendance
+
+If only **Marks** and **Attendance** are important for a particular analysis, PCA reduces the dataset by removing unnecessary features.
+
+---
+
+### Applications
+
+- Image Compression
+- Face Recognition
+- Data Visualization
+- Noise Reduction
+- Machine Learning Preprocessing
+
+---
+
+### Advantages
+
+- Reduces dataset size
+- Speeds up model training
+- Removes unnecessary features
+- Improves performance
+
+---
+
+### Limitations
+
+- Reduced features may be difficult to interpret
+- Some information may be lost
+- Not suitable for every dataset
+
+
 ---
 
 ## Real-Life Applications
